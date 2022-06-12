@@ -38,4 +38,4 @@ jobs:
         with:          
           images: jamesfrj/kube-news:${{github.run_number}}
           manifests: |
-            k8s/deployment.yml
+            k8s/deployment.yaml

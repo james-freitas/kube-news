@@ -36,6 +36,6 @@ jobs:
       - name: Deploy to Kubernetes cluster
         uses: Azure/k8s-deploy@v3.1
         with:          
-          images: jamesfrj/kube-news:${{github.run_number}}
+          images: jamesfrj/kube-news:v${{github.run_number}}
           manifests: |
             k8s/deployment.yaml
